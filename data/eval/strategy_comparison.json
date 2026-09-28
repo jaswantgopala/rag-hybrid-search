@@ -1,0 +1,20 @@
+{
+  "fixed_size": {
+    "avg_correctness": 0.885,
+    "avg_faithfulness": 0.771,
+    "avg_retrieval_relevance": 0.85,
+    "avg_citation_accuracy": 0.771
+  },
+  "structure_aware": {
+    "avg_correctness": 0.885,
+    "avg_faithfulness": 0.771,
+    "avg_retrieval_relevance": 0.85,
+    "avg_citation_accuracy": 0.771
+  },
+  "semantic": {
+    "avg_correctness": 0.73,
+    "avg_faithfulness": 0.825,
+    "avg_retrieval_relevance": 0.75,
+    "avg_citation_accuracy": 0.825
+  }
+}

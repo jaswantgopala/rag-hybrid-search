@@ -1,0 +1,9 @@
+<html>
+<head><title>API Rate Limits</title></head>
+<body>
+<h1>API Rate Limits and Error Codes</h1>
+<p>The internal API gateway enforces a rate limit of 1000 requests per minute per API key. Exceeding this limit returns an HTTP 429 error with a Retry-After header.</p>
+<h2>Common Error Codes</h2>
+<p>Error code 4001 indicates an invalid authentication token. Error code 5003 indicates a downstream service timeout. Both errors are logged automatically in the observability dashboard.</p>
+</body>
+</html>

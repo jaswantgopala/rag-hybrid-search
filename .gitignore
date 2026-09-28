@@ -1,0 +1,18 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+
+# generated at ingestion time, rebuilt by following the README
+data/chroma_db/
+data/bm25_index/
+data/processed/
+
+# personal file from your other project
+data/raw/LLM_Cost_Autopilot_Interview_Guide.pdf
+
+# unfinished Docker setup (README says the project runs locally)
+Dockerfile
+docker-compose.yml
+.dockerignore

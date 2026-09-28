@@ -1,0 +1,230 @@
+{
+  "strategy": "structure_aware",
+  "total_questions": 20,
+  "avg_correctness": 0.885,
+  "avg_faithfulness": 0.771,
+  "avg_retrieval_relevance": 0.85,
+  "avg_citation_accuracy": 0.771,
+  "results": [
+    {
+      "id": "q1",
+      "question": "What should I do if a production service goes down?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 0.8,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.95
+    },
+    {
+      "id": "q2",
+      "question": "How many approvals does a pull request need before merging?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.875
+    },
+    {
+      "id": "q3",
+      "question": "What is the rate limit on the internal API gateway?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.95
+    },
+    {
+      "id": "q4",
+      "question": "How often must passwords be rotated?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 0.8,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.875
+    },
+    {
+      "id": "q5",
+      "question": "How many days per week can an eligible employee work remotely, and what stipend do they get for equipment?",
+      "type": "multi-hop",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.95
+    },
+    {
+      "id": "q6",
+      "question": "If a hotfix needs to go out, which branch is it created from, and what happens to it after?",
+      "type": "multi-hop",
+      "status": "answered",
+      "correctness": 0.8,
+      "faithfulness": 0.333,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.333,
+      "composite_confidence": 0.663
+    },
+    {
+      "id": "q7",
+      "question": "How often does the on-call rotation happen, and what must the on-call engineer do when an alert fires?",
+      "type": "multi-hop",
+      "status": "low_confidence",
+      "correctness": 0.5,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 0.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.484
+    },
+    {
+      "id": "q8",
+      "question": "How long is customer data retained, and how long does the company have to respond to a GDPR data subject request?",
+      "type": "multi-hop",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 0.25,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.25,
+      "composite_confidence": 0.613
+    },
+    {
+      "id": "q9",
+      "question": "What is the deployment rollback process, and how does it relate to the incident response runbook?",
+      "type": "multi-hop",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 0.667,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.667,
+      "composite_confidence": 0.833
+    },
+    {
+      "id": "q10",
+      "question": "What expenses require manager pre-approval, and what's the reimbursement submission deadline?",
+      "type": "multi-hop",
+      "status": "answered",
+      "correctness": 0.8,
+      "faithfulness": 0.5,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.5,
+      "composite_confidence": 0.774
+    },
+    {
+      "id": "q11",
+      "question": "What is the company's parental leave policy?",
+      "type": "no_answer",
+      "status": "low_confidence",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.0
+    },
+    {
+      "id": "q12",
+      "question": "What is the CEO's name?",
+      "type": "no_answer",
+      "status": "low_confidence",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.25
+    },
+    {
+      "id": "q13",
+      "question": "How much does the company pay for health insurance premiums?",
+      "type": "no_answer",
+      "status": "low_confidence",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.0
+    },
+    {
+      "id": "q14",
+      "question": "What happens if an alert fires too often without leading to action?",
+      "type": "lookup",
+      "status": "low_confidence",
+      "correctness": 0.5,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 0.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.125
+    },
+    {
+      "id": "q15",
+      "question": "When does a support ticket get escalated immediately regardless of tier?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 0.667,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.667,
+      "composite_confidence": 0.758
+    },
+    {
+      "id": "q16",
+      "question": "What's required before dropping a database column?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 0.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.0,
+      "composite_confidence": 0.509
+    },
+    {
+      "id": "q17",
+      "question": "What naming convention is used for Python constants?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 0.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.0,
+      "composite_confidence": 0.525
+    },
+    {
+      "id": "q18",
+      "question": "Can I restart a production service myself if I see it's down?",
+      "type": "ambiguous",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.95
+    },
+    {
+      "id": "q19",
+      "question": "Is there a difference between P1 and P2 alerts?",
+      "type": "lookup",
+      "status": "low_confidence",
+      "correctness": 0.5,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 0.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.0
+    },
+    {
+      "id": "q20",
+      "question": "What access control applies to production databases?",
+      "type": "lookup",
+      "status": "answered",
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "composite_confidence": 0.9
+    }
+  ]
+}

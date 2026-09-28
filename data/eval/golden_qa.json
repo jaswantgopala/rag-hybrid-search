@@ -1,0 +1,142 @@
+[
+  {
+    "id": "q1",
+    "question": "What should I do if a production service goes down?",
+    "expected_answer": "Check the status dashboard, verify it's not a false positive, page the on-call engineer via PagerDuty if confirmed, and follow the rollback checklist instead of restarting blindly.",
+    "expected_sources": ["sample.txt"],
+    "type": "lookup"
+  },
+  {
+    "id": "q2",
+    "question": "How many approvals does a pull request need before merging?",
+    "expected_answer": "At least two approvals are required before merging to main.",
+    "expected_sources": ["sample.md"],
+    "type": "lookup"
+  },
+  {
+    "id": "q3",
+    "question": "What is the rate limit on the internal API gateway?",
+    "expected_answer": "1000 requests per minute per API key, returning HTTP 429 if exceeded.",
+    "expected_sources": ["sample.html"],
+    "type": "lookup"
+  },
+  {
+    "id": "q4",
+    "question": "How often must passwords be rotated?",
+    "expected_answer": "Every 90 days, and cannot reuse the last 5 passwords.",
+    "expected_sources": ["sample.pdf"],
+    "type": "lookup"
+  },
+  {
+    "id": "q5",
+    "question": "How many days per week can an eligible employee work remotely, and what stipend do they get for equipment?",
+    "expected_answer": "Up to 3 days per week remote, plus a one-time $300 home office stipend.",
+    "expected_sources": ["doc1_remote_work.md"],
+    "type": "multi-hop"
+  },
+  {
+    "id": "q6",
+    "question": "If a hotfix needs to go out, which branch is it created from, and what happens to it after?",
+    "expected_answer": "Hotfixes are branched directly from the production tag, tested in staging, then merged back into both main and the active release branch.",
+    "expected_sources": ["doc2_git_branching.md"],
+    "type": "multi-hop"
+  },
+  {
+    "id": "q7",
+    "question": "How often does the on-call rotation happen, and what must the on-call engineer do when an alert fires?",
+    "expected_answer": "Rotations run weekly; the on-call engineer must acknowledge pages within 5 minutes and follow the incident response runbook for confirmed incidents.",
+    "expected_sources": ["doc3_oncall_rotation.md", "sample.txt"],
+    "type": "multi-hop"
+  },
+  {
+    "id": "q8",
+    "question": "How long is customer data retained, and how long does the company have to respond to a GDPR data subject request?",
+    "expected_answer": "Data is retained for the contract duration plus 90 days; data subject requests must be processed within 30 days.",
+    "expected_sources": ["doc4_data_privacy.md"],
+    "type": "multi-hop"
+  },
+  {
+    "id": "q9",
+    "question": "What is the deployment rollback process, and how does it relate to the incident response runbook?",
+    "expected_answer": "A one-click rollback button reverts to the last known good build within 2 minutes; this is the same rollback checklist referenced in the incident response runbook.",
+    "expected_sources": ["doc5_deployment_process.md", "sample.txt"],
+    "type": "multi-hop"
+  },
+  {
+    "id": "q10",
+    "question": "What expenses require manager pre-approval, and what's the reimbursement submission deadline?",
+    "expected_answer": "Purchases outside the eligible categories require pre-approval; expenses must be submitted within 30 days of purchase.",
+    "expected_sources": ["doc6_expense_policy.md"],
+    "type": "multi-hop"
+  },
+  {
+    "id": "q11",
+    "question": "What is the company's parental leave policy?",
+    "expected_answer": "NO_ANSWER",
+    "expected_sources": [],
+    "type": "no_answer"
+  },
+  {
+    "id": "q12",
+    "question": "What is the CEO's name?",
+    "expected_answer": "NO_ANSWER",
+    "expected_sources": [],
+    "type": "no_answer"
+  },
+  {
+    "id": "q13",
+    "question": "How much does the company pay for health insurance premiums?",
+    "expected_answer": "NO_ANSWER",
+    "expected_sources": [],
+    "type": "no_answer"
+  },
+  {
+    "id": "q14",
+    "question": "What happens if an alert fires too often without leading to action?",
+    "expected_answer": "It should be reviewed and either tuned or removed; tracked in the monthly alert-health review.",
+    "expected_sources": ["doc7_monitoring_alerting.md"],
+    "type": "lookup"
+  },
+  {
+    "id": "q15",
+    "question": "When does a support ticket get escalated immediately regardless of tier?",
+    "expected_answer": "If it involves data loss, a security concern, or an enterprise customer threatening to churn.",
+    "expected_sources": ["doc8_customer_escalation.md"],
+    "type": "lookup"
+  },
+  {
+    "id": "q16",
+    "question": "What's required before dropping a database column?",
+    "expected_answer": "A two-step migration: deprecate first, then remove in a later release, to keep backward compatibility.",
+    "expected_sources": ["doc9_database_guidelines.md"],
+    "type": "lookup"
+  },
+  {
+    "id": "q17",
+    "question": "What naming convention is used for Python constants?",
+    "expected_answer": "UPPER_SNAKE_CASE.",
+    "expected_sources": ["doc10_code_style.md"],
+    "type": "lookup"
+  },
+  {
+    "id": "q18",
+    "question": "Can I restart a production service myself if I see it's down?",
+    "expected_answer": "Not without following the rollback checklist first, as restarting without it can cause data inconsistency.",
+    "expected_sources": ["sample.txt"],
+    "type": "ambiguous"
+  },
+  {
+    "id": "q19",
+    "question": "Is there a difference between P1 and P2 alerts?",
+    "expected_answer": "P1 is critical and pages immediately; P2 is urgent and requires response within 30 minutes.",
+    "expected_sources": ["doc7_monitoring_alerting.md"],
+    "type": "lookup"
+  },
+  {
+    "id": "q20",
+    "question": "What access control applies to production databases?",
+    "expected_answer": "Direct access requires a time-limited credential from the internal access-request tool, expiring after 4 hours.",
+    "expected_sources": ["doc9_database_guidelines.md"],
+    "type": "lookup"
+  }
+]

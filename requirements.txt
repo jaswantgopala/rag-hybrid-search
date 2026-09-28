@@ -1,0 +1,13 @@
+sentence-transformers
+chromadb
+rank-bm25
+langchain
+langchain-text-splitters
+fastapi
+uvicorn[standard]
+python-multipart
+pypdf
+beautifulsoup4
+markdown
+streamlit
+requests

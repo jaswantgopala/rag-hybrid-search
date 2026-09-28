@@ -1,0 +1,7 @@
+Incident Response Runbook
+
+If a production service goes down, first check the status dashboard at status.internal.company.com. Confirm the alert is not a false positive by checking the last 15 minutes of error logs.
+
+If the incident is confirmed, page the on-call engineer immediately using PagerDuty. Do not attempt to restart production services without following the rollback checklist, as this can cause data inconsistency.
+
+Once resolved, file a postmortem document within 48 hours summarizing the root cause, timeline, and action items.
